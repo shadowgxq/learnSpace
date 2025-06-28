@@ -1,13 +1,12 @@
 import React from 'react'
-import { useState } from 'react'
-
+import { useState, memo, useImperativeHandle } from 'react'
+import ForWordComp from './components/forwordComp'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>test</div>
-    </>
+    <div>
+      <h3>组件通信</h3>
+      <ForWordComp />
+    </div>
   )
 }
 
